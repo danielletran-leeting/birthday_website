@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var confettiSettings = {
         target: 'my-canvas',
-        max: 200,
         size: 1,
         rotate: false
     };
