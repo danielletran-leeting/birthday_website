@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .name{
+            margin-top: 2cm;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .details{
+            margin-top: 10px;
+            color:#000080;
+            font-weight: bold;
+            font-size: x-large;
+        }
+        .event_details{
+
+            display: flex;
+            flex-direction: column;
+            max-width: 250px;
+            place-items: center;
+            text-align: center;
+            margin-top: 2%;
+            margin-left: 43%;
+        }
+
+        .pinterest_logo{
+            width: 70px;
+            height: 70px;
+        }
+
+        #my-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1; /* Adjust the z-index as needed */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class = 'container'>
+        <div class = 'event_details'>
+            <p class="name">hello, <span id="name-display"></span>!</p>
+            <h1><em class = 'details'>Details</em></h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.483812676417!2d144.89188747644144!3d-37.84896853605181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad666de19bba545%3A0xffa02521f2b269be!2s75%20The%20Strand%2C%20Newport%20VIC%203015!5e0!3m2!1sen!2sau!4v1712036352725!5m2!1sen!2sau" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>75 The Strand, Newport 3015</p>
+            <p>dinner starts 7pm</p>
+            <p>dress up a little bit but not a lot lol</p>
+            <p>pinterest board below for the vibes</p>
+            <a href = 'https://pin.it/3ZzNK2QUc' target = '_blank'>
+                <img class = 'pinterest_logo' href='https://pin.it/3ZzNK2QUc' src = '/Users/danielletran/Downloads/pinterest.png'>
+            </a>
+        </div>
+        <canvas id="my-canvas"></canvas>
+    </div>
+</body>
+
+<script src="details.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/confetti-js/dist/index.min.js"></script>
+
+
+</html>
